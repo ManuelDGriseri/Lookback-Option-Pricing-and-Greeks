@@ -1,0 +1,11 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="Node000000" href="$classopt_1_1_aggregator.html" title="Interface abstraite pour l&#39;agrégation des prix path&#45;dépendants." alt="" coords="5,81,116,108"/>
+<area shape="rect" id="Node000001" href="$classopt_1_1_arithmetic.html" title="Agrégateur pour la moyenne arithmétique." alt="" coords="164,5,270,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="102,72,162,42,186,30,188,35,165,46,104,77"/>
+<area shape="rect" id="Node000002" href="$classopt_1_1_geometric.html" title="Agrégateur pour la moyenne géométrique." alt="" coords="164,56,271,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="131,81,163,75,164,81,132,86"/>
+<area shape="rect" id="Node000003" href="$classopt_1_1_look_max.html" title="Agrégateur pour le maximum." alt="" coords="167,107,268,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="132,103,167,109,166,115,131,109"/>
+<area shape="rect" id="Node000004" href="$classopt_1_1_look_min.html" title="Agrégateur pour le minimum." alt="" coords="169,157,266,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="104,113,165,143,188,154,186,159,162,148,102,118"/>
+</map>
