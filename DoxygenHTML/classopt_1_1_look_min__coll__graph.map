@@ -1,5 +1,0 @@
-<map id="opt::LookMin" name="opt::LookMin">
-<area shape="rect" id="Node000001" title="Agrégateur pour le minimum." alt="" coords="14,155,187,256"/>
-<area shape="rect" id="Node000002" href="$classopt_1_1_aggregator.html" title="Interface abstraite pour l&#39;agrégation des prix path&#45;dépendants." alt="" coords="5,5,195,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,122,103,155,98,155,98,122"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="opt::PayoffCall" name="opt::PayoffCall">
-<area shape="rect" id="Node000001" title="Payoff d&#39;une option d&#39;achat (call)." alt="" coords="5,155,191,240"/>
-<area shape="rect" id="Node000002" href="$classopt_1_1_payoff.html" title="Classe abstraite représentant le payoff d&#39;une option." alt="" coords="22,5,174,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,122,101,155,96,155,96,122"/>
-</map>

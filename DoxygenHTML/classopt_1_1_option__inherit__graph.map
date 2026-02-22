@@ -1,5 +1,0 @@
-<map id="opt::Option" name="opt::Option">
-<area shape="rect" id="Node000001" title="Interface abstraite commune pour les options en Black–Scholes (Monte Carlo)." alt="" coords="11,5,213,448"/>
-<area shape="rect" id="Node000002" href="$classopt_1_1_asian.html" title="Option path&#45;dépendante en Black–Scholes valorisée par Monte Carlo." alt="" coords="5,496,218,1163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,463,114,496,109,496,109,463"/>
-</map>
