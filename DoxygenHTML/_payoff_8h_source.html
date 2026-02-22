@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Monte Carlo Lookback:  Fichier source de src/Payoff.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Projet Monte Carlo Lookback
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_payoff_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Payoff.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_payoff_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PAYOFF_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PAYOFF_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceopt.html">opt</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classopt_1_1_payoff.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classopt_1_1_payoff.html">Payoff</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classopt_1_1_payoff.html#aadde14e091e70e0b873cd6f0cc238fa4">   19</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code hl_function" href="classopt_1_1_payoff.html#aadde14e091e70e0b873cd6f0cc238fa4">operator()</a>(<span class="keywordtype">double</span> S, <span class="keywordtype">double</span> K) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classopt_1_1_payoff_call.html">   25</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classopt_1_1_payoff_call.html">PayoffCall</a> : <span class="keyword">public</span> <a class="code hl_class" href="classopt_1_1_payoff.html">Payoff</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">double</span> <a class="code hl_function" href="classopt_1_1_payoff_call.html#a649c0438d4a619ff292e3bdcc818316e">operator()</a>(<span class="keywordtype">double</span> S, <span class="keywordtype">double</span> K) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classopt_1_1_payoff_put.html">   33</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classopt_1_1_payoff_put.html">PayoffPut</a> : <span class="keyword">public</span> <a class="code hl_class" href="classopt_1_1_payoff.html">Payoff</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">double</span> <a class="code hl_function" href="classopt_1_1_payoff_put.html#acc11227cf04956ff9e5f7d926b8f9966">operator()</a>(<span class="keywordtype">double</span> S, <span class="keywordtype">double</span> K) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    };</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classopt_1_1_payoff_digit_call.html">   41</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classopt_1_1_payoff_digit_call.html">PayoffDigitCall</a> : <span class="keyword">public</span> <a class="code hl_class" href="classopt_1_1_payoff.html">Payoff</a> {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">double</span> <a class="code hl_function" href="classopt_1_1_payoff_digit_call.html#a23b4708d0358e7fc2a5cf886da2db3bb">operator()</a>(<span class="keywordtype">double</span> S, <span class="keywordtype">double</span> K) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classopt_1_1_payoff_digit_put.html">   49</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classopt_1_1_payoff_digit_put.html">PayoffDigitPut</a> : <span class="keyword">public</span> <a class="code hl_class" href="classopt_1_1_payoff.html">Payoff</a> {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">double</span> <a class="code hl_function" href="classopt_1_1_payoff_digit_put.html#a88902db6e369b0009b20c56a783c5d4d">operator()</a>(<span class="keywordtype">double</span> S, <span class="keywordtype">double</span> K) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    };</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace opt</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// PAYOFF_H</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="ttc" id="aclassopt_1_1_payoff_call_html"><div class="ttname"><a href="classopt_1_1_payoff_call.html">opt::PayoffCall</a></div><div class="ttdoc">Payoff d&#39;une option d&#39;achat (call).</div><div class="ttdef"><b>Definition</b> Payoff.h:25</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_call_html_a649c0438d4a619ff292e3bdcc818316e"><div class="ttname"><a href="classopt_1_1_payoff_call.html#a649c0438d4a619ff292e3bdcc818316e">opt::PayoffCall::operator()</a></div><div class="ttdeci">double operator()(double S, double K) const override</div><div class="ttdoc">Calcule la valeur du payoff pour un prix S du sous-jacent.</div><div class="ttdef"><b>Definition</b> Payoff.cpp:6</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_digit_call_html"><div class="ttname"><a href="classopt_1_1_payoff_digit_call.html">opt::PayoffDigitCall</a></div><div class="ttdoc">Payoff d&#39;un call digital.</div><div class="ttdef"><b>Definition</b> Payoff.h:41</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_digit_call_html_a23b4708d0358e7fc2a5cf886da2db3bb"><div class="ttname"><a href="classopt_1_1_payoff_digit_call.html#a23b4708d0358e7fc2a5cf886da2db3bb">opt::PayoffDigitCall::operator()</a></div><div class="ttdeci">double operator()(double S, double K) const override</div><div class="ttdoc">Calcule la valeur du payoff pour un prix S du sous-jacent.</div><div class="ttdef"><b>Definition</b> Payoff.cpp:18</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_digit_put_html"><div class="ttname"><a href="classopt_1_1_payoff_digit_put.html">opt::PayoffDigitPut</a></div><div class="ttdoc">Payoff d&#39;un put digital.</div><div class="ttdef"><b>Definition</b> Payoff.h:49</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_digit_put_html_a88902db6e369b0009b20c56a783c5d4d"><div class="ttname"><a href="classopt_1_1_payoff_digit_put.html#a88902db6e369b0009b20c56a783c5d4d">opt::PayoffDigitPut::operator()</a></div><div class="ttdeci">double operator()(double S, double K) const override</div><div class="ttdoc">Calcule la valeur du payoff pour un prix S du sous-jacent.</div><div class="ttdef"><b>Definition</b> Payoff.cpp:24</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_html"><div class="ttname"><a href="classopt_1_1_payoff.html">opt::Payoff</a></div><div class="ttdoc">Classe abstraite représentant le payoff d&#39;une option.</div><div class="ttdef"><b>Definition</b> Payoff.h:11</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_html_aadde14e091e70e0b873cd6f0cc238fa4"><div class="ttname"><a href="classopt_1_1_payoff.html#aadde14e091e70e0b873cd6f0cc238fa4">opt::Payoff::operator()</a></div><div class="ttdeci">virtual double operator()(double S, double K) const =0</div><div class="ttdoc">Calcule la valeur du payoff pour un prix S du sous-jacent.</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_put_html"><div class="ttname"><a href="classopt_1_1_payoff_put.html">opt::PayoffPut</a></div><div class="ttdoc">Payoff d&#39;une option de vente (put).</div><div class="ttdef"><b>Definition</b> Payoff.h:33</div></div>
+<div class="ttc" id="aclassopt_1_1_payoff_put_html_acc11227cf04956ff9e5f7d926b8f9966"><div class="ttname"><a href="classopt_1_1_payoff_put.html#acc11227cf04956ff9e5f7d926b8f9966">opt::PayoffPut::operator()</a></div><div class="ttdeci">double operator()(double S, double K) const override</div><div class="ttdoc">Calcule la valeur du payoff pour un prix S du sous-jacent.</div><div class="ttdef"><b>Definition</b> Payoff.cpp:12</div></div>
+<div class="ttc" id="anamespaceopt_html"><div class="ttname"><a href="namespaceopt.html">opt</a></div><div class="ttdef"><b>Definition</b> Aggregator.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="_payoff_8h.html">Payoff.h</a></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
